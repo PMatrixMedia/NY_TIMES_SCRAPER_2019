@@ -5,6 +5,7 @@ import Jumbotron from "./components/Jumbotron";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
+import Detail from "./pages/Detail";
 
 const App = () =>
   <React.Fragment>
@@ -14,6 +15,7 @@ const App = () =>
       <Switch>
         <Route exact path="/" component={Search} />
         <Route exact path="/saved" component={Saved} />
+        <Route exact path="/api/articles" component={Detail} />
         <Route component={NoMatch} />
       </Switch>
     </Router>
